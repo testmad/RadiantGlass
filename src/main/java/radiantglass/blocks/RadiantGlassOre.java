@@ -21,7 +21,7 @@ public class RadiantGlassOre extends Block{
 		this.setStepSound(soundTypeStone);
 		this.setLightLevel(.6F);
 		this.useNeighborBrightness = true;
-		setCreativeTab(RadiantGlass.getcreativeTab());
+		this.setCreativeTab(RadiantGlass.getcreativeTab());
 	}
 	
 	@SideOnly(Side.CLIENT)

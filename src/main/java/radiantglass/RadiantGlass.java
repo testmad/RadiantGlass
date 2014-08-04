@@ -7,16 +7,20 @@ import radiantglass.handlers.RecipeHandler;
 import radiantglass.items.ModItems;
 import radiantglass.proxy.CommonProxy;
 import radiantglass.util.References;
+import radiantglass.worldgen.RadiantGlassWorldGen;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.SidedProxy;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
 import cpw.mods.fml.common.event.FMLPreInitializationEvent;
+import cpw.mods.fml.common.registry.GameRegistry;
 
 @Mod(modid = References.MODID, name = References.MODNAME, version = References.VERSION)
 public class RadiantGlass {
 
 	public static CreativeTabs radiantGlassTab;
+	
+	RadiantGlassWorldGen eventWorldGen = new RadiantGlassWorldGen();
 	
 	@Mod.Instance(References.MODID)
 	public static RadiantGlass instance;
@@ -38,7 +42,7 @@ public class RadiantGlass {
 	
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
-		
+		GameRegistry.registerWorldGenerator(eventWorldGen, 0);
 	}
 	
 	@Mod.EventHandler

@@ -11,6 +11,11 @@ public class Registrar {
 		GameRegistry.registerBlock(block, References.MODID + "_" + block.getUnlocalizedName().substring(5));
 	}
 	
+	public static void registerMetaBlock(Block block, Class itemclass)
+	{
+		GameRegistry.registerBlock(block, itemclass, References.MODID + "_" + block.getUnlocalizedName().substring(5));
+	}
+	
 	public static void registerItem(Item item)
 	{
 		GameRegistry.registerItem(item, References.MODID + "_" + item.getUnlocalizedName().substring(5));
