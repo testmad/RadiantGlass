@@ -27,6 +27,9 @@ public class SolidRadiantGlassBlock extends Block{
 		this.setHardness(3.0F);
 		this.setResistance(10.0F);
 		this.setStepSound(soundTypeGlass);
+		
+		this.setLightLevel(1.0f);
+		this.setLightOpacity(255);
 	}
 	
 	@SideOnly(Side.CLIENT)

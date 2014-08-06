@@ -20,5 +20,4 @@ public class Registrar {
 	{
 		GameRegistry.registerItem(item, References.MODID + "_" + item.getUnlocalizedName().substring(5));
 	}
-
 }

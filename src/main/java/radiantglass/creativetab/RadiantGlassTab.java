@@ -21,7 +21,7 @@ public class RadiantGlassTab extends CreativeTabs{
     @Override
     public Item getTabIconItem()
     {
-        return Item.getItemFromBlock(ModBlocks.radiantGlassOre);
+        return ModItems.radiantDust;
 
     }
 }
