@@ -1,8 +1,8 @@
 [
 {
   "modid": "radiantglass",
-  "name": "Radiant Glass",
-  "description": "Lit up glass.",
+  "name": "Radiant Glass Mod",
+  "description": "Provides lit up glass blocks in various colors.",
   "version": "${version}",
   "mcversion": "${mcversion}",
   "url": "",

@@ -1,13 +1,14 @@
-package radiantglass.blocks;
+package com.testmad.radiantglassmod.blocks;
 
 import net.minecraft.block.Block;
-import radiantglass.items.ItemSolidRadiantGlassBlock;
-import radiantglass.items.ItemTransRadiantGlassBlock;
-import radiantglass.util.Registrar;
-import radiantglass.util.Strings;
+
+import com.testmad.radiantglassmod.items.ItemSolidRadiantGlassBlock;
+import com.testmad.radiantglassmod.items.ItemTransRadiantGlassBlock;
+import com.testmad.radiantglassmod.util.Registrar;
+import com.testmad.radiantglassmod.util.Strings;
 
 public class ModBlocks {
-	
+
 	public static Block radiantGlassOre;
 	public static Block solidRadiantGlassBlock;
 	public static Block transRadiantGlassBlock;
@@ -46,8 +47,8 @@ public class ModBlocks {
 	public static Block orangeTransRadiantGlassStair;
 	public static Block whiteTransRadiantGlassStair;
 	
-	public static void init(){
-		
+	public static void init()
+	{
 		radiantGlassOre = new RadiantGlassOre().setBlockName(Strings.RadiantGlassOreName).setHardness(3.0F);
 		Registrar.registerBlock(radiantGlassOre);
 		
@@ -153,7 +154,5 @@ public class ModBlocks {
 		
 		whiteTransRadiantGlassStair = new TransRadiantStair(ModBlocks.transRadiantGlassBlock, 15).setBlockName(Strings.WhiteTransRadiantGlassStairName);
 		Registrar.registerBlock(whiteTransRadiantGlassStair);
-		
 	}
-
 }

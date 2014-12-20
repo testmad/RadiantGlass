@@ -1,22 +1,24 @@
-package radiantglass.handlers;
+package com.testmad.radiantglassmod.handlers;
 
-import radiantglass.blocks.ModBlocks;
-import radiantglass.items.ModItems;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
+
+import com.testmad.radiantglassmod.blocks.ModBlocks;
+import com.testmad.radiantglassmod.items.ModItems;
+
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class RecipeHandler {
 	
 	public static void init()
-    {
-        registerRecipes();
-    }
- 
-    public static void registerRecipes()
-    {
-    	GameRegistry.addShapelessRecipe(new ItemStack(ModItems.coloredDust, 2, 0), new Object[]{
+	{
+		registerRecipes();
+	}
+	
+	public static void registerRecipes()
+	{
+		GameRegistry.addShapelessRecipe(new ItemStack(ModItems.coloredDust, 2, 0), new Object[]{
     		new ItemStack(Items.dye, 1,0), ModItems.radiantDust
     	});
     	
@@ -308,10 +310,6 @@ public class RecipeHandler {
     	GameRegistry.addRecipe(new ItemStack(ModBlocks.whiteTransRadiantGlassStair, 4), new Object[]{
             "g  ", "gg ", "ggg", 'g', new ItemStack(ModBlocks.transRadiantGlassBlock, 1, 15)
     	});
-    	
-    	
-    	
-    	
-    }
+	}
 
 }

@@ -1,4 +1,4 @@
-package radiantglass.items;
+package com.testmad.radiantglassmod.items;
 
 import net.minecraft.block.Block;
 import net.minecraft.item.ItemBlock;
@@ -23,10 +23,8 @@ public class ItemTransRadiantGlassBlock extends ItemBlock{
 		return super.getUnlocalizedName() + "." + subBlocks[i];
 	}
 	
-	public int getMetadata(int meta){
+	public int getMetadata(int meta)
+	{
 		return meta;
 	}
-
-	
-	
 }

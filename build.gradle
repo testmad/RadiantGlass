@@ -17,13 +17,13 @@ buildscript {
 
 apply plugin: 'forge'
 
-version = "1.7.10-1.0"
-group= "radiantglass" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
-archivesBaseName = "radaintGlass"
+version = "1.7.10_3"
+group= "com.testmad.radiantglass" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+archivesBaseName = "radiantglass"
 
 minecraft {
-    version = "1.7.10-10.13.0.1180"
-    assetDir = "eclipse/assets"
+    version = "1.7.10-10.13.2.1264"
+    runDir = "eclipse"
 }
 
 dependencies {

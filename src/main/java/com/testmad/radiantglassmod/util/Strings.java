@@ -1,4 +1,4 @@
-package radiantglass.util;
+package com.testmad.radiantglassmod.util;
 
 public class Strings {
 
@@ -43,5 +43,4 @@ public class Strings {
 	public static final String MagentaTransRadiantGlassStairName = "magentaTransRadiantGlassStair";
 	public static final String OrangeTransRadiantGlassStairName = "orangeTransRadiantGlassStair";
 	public static final String WhiteTransRadiantGlassStairName = "whiteTransRadiantGlassStair";
-
 }
